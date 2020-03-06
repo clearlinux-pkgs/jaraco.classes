@@ -4,7 +4,7 @@
 #
 Name     : jaraco.classes
 Version  : 3.1.0
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/c0/1c/b49b501195289f8222db3794f3c7457747bbec1a6169b4f1780d4fa99549/jaraco.classes-3.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c0/1c/b49b501195289f8222db3794f3c7457747bbec1a6169b4f1780d4fa99549/jaraco.classes-3.1.0.tar.gz
 Summary  : Utility functions for Python class constructs
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583535060
+export SOURCE_DATE_EPOCH=1583538598
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -86,6 +86,9 @@ python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
+## Remove excluded files
+rm -f %{buildroot}/usr/lib/python3.*/site-packages/jaraco/__init__.py
+rm -f %{buildroot}/usr/lib/python3.*/site-packages/jaraco/__pycache__/__init__.*
 
 %files
 %defattr(-,root,root,-)
