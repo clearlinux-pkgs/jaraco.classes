@@ -4,7 +4,7 @@
 #
 Name     : jaraco.classes
 Version  : 3.1.0
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/c0/1c/b49b501195289f8222db3794f3c7457747bbec1a6169b4f1780d4fa99549/jaraco.classes-3.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c0/1c/b49b501195289f8222db3794f3c7457747bbec1a6169b4f1780d4fa99549/jaraco.classes-3.1.0.tar.gz
 Summary  : Utility functions for Python class constructs
