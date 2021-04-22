@@ -1,3 +1,19 @@
+v3.2.1
+======
+
+Refreshed package metadata.
+
+v3.2.0
+======
+
+Switched to native namespace for jaraco package.
+
+v3.1.1
+======
+
+Packaging refresh and associated cleanups, including fix
+for #4 (failing black check).
+
 v3.1.0
 ======
 
